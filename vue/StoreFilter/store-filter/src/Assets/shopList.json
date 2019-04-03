@@ -1,0 +1,107 @@
+{
+    "data": [{
+                "name": "Robin hood",
+                "category": "Hoodies",
+                "colour": "green",
+                "size": "m",
+                "gender": "m"
+            },
+            {
+                "name": "Asda-das",
+                "category": "Hoodies",
+                "colour": "red",
+                "size": "s",
+                "gender": "f"
+            },
+            {
+                "name": "Baggy",
+                "category": "Hoodies",
+                "colour": "blue",
+                "size": "l",
+                "gender": "m"
+            },
+            {
+                "name": "Speedos",
+                "category": "Shorts",
+                "colour": "red",
+                "size": "m",
+                "gender": "m"
+            },
+            {
+                "name": "Haiwaiin",
+                "category": "Shorts",
+                "colour": "green",
+                "size": "s",
+                "gender": "f"
+            },
+            {
+                "name": "Hipster",
+                "category": "Shorts",
+                "colour": "blue",
+                "size": "l",
+                "gender": "m"
+            },
+            {
+                "name": "NKE air",
+                "category": "Shoes",
+                "colour": "blue",
+                "size": "m",
+                "gender": "m"
+            },
+            {
+                "name": "CandyFloss",
+                "category": "Shoes",
+                "colour": "red",
+                "size": "s",
+                "gender": "f"
+            },
+            {
+                "name": "Loafers",
+                "category": "Shoes",
+                "colour": "green",
+                "size": "l",
+                "gender": "m"
+            },
+            {
+                "name": "Uncomfortable but stylish",
+                "category": "T-Shirts",
+                "colour": "blue",
+                "size": "m",
+                "gender": "m"
+            },
+            {
+                "name": "Edgy cat",
+                "category": "T-Shirts",
+                "colour": "red",
+                "size": "l",
+                "gender": "f"
+            },
+            {
+                "name": "GameLogo",
+                "category": "T-Shirts",
+                "colour": "green",
+                "size": "s",
+                "gender": "m"
+            },
+            {
+                "name": "Gloves",
+                "category": "Accessories",
+                "colour": "blue",
+                "size": "s",
+                "gender": "m"
+            },
+            {
+                "name": "Skipping rope",
+                "category": "Accessories",
+                "colour": "red",
+                "size": "l",
+                "gender": "f"
+            },
+            {
+                "name": "Dumbells",
+                "category": "Accessories",
+                "colour": "green",
+                "size": "s",
+                "gender": "f"
+            }]
+}
