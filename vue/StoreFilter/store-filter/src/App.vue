@@ -12,11 +12,13 @@
             class="el-menu-vertical-demo">
             <el-menu-item index="home">
               <i class="el-icon-menu"></i>
-              <span>Home</span>
+              <span>All Products</span>
             </el-menu-item>
-            <el-menu-item index="notes">
+
+            <el-menu-item index="items">
               <i class="el-icon-document"></i>
               <span>Filters</span>
+            </el-menu-item>
             </el-menu-item>
           </el-menu>
         </el-aside>

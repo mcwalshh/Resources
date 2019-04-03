@@ -2,35 +2,23 @@
   <div class="notes">
     <h1>
       <span class="search">Search</span> <el-input placeholder="Start typing your search" v-model="input"></el-input>
+      
     </h1>
-    <el-table
-      :data="tableData"
-      border>
-      <el-table-column type="expand">
-        <template slot-scope="props">
-          <p>{{ props.row.name }}</p>
-        </template>
-      </el-table-column>
-      <el-table-column
-        label="Category">
-        <template slot-scope="props">
-          {{ props.row.category }}
-        </template>
-      </el-table-column>
-      <el-table-column
-        label="Colour"
-        prop="colour">
-      </el-table-column>
-      <el-table-column
-        fixed="right"
-        label=""
-        width="90">
-        <template slot-scope="scope">
-          <el-button type="info" size="small" icon="el-icon-edit" circle></el-button>
-          <el-button type="danger" size="small" icon="el-icon-delete" circle style="margin-left: 5px;"></el-button>
-        </template>
-      </el-table-column>
-    </el-table>
+<el-row>
+  
+  <el-col :span="8" v-for="(key, index) in tabledData" :key="index">
+    <el-card :body-style="{ padding: '0px', margin: '10px' }">
+      <img v-lazy="'https://loremflickr.com/320/240/' + key.category + ',' + key.gender +'?' + index" class="image">
+      <div style="margin: 14px;">
+        <span> {{ key.name }}</span>
+        <div class="bottom clearfix">
+          <time class="time">{{key.gender}}'s {{ key.category }}</time>
+          <el-button type="text" class="button">{{ key.price }}</el-button>
+        </div>
+      </div>
+    </el-card>
+  </el-col>
+</el-row>
   </div>
 </template>
 
@@ -46,22 +34,20 @@ export default {
       tableData: JsonList.data
     };
   },
-  // created() {
-  //   ShopList.getShoppingList()
-  //       .then((response) => {
-  //         this.status = response.status      
-  //       })
-  //       .catch(function (error) {
-  //         if (error.response){
-  //         this.status = error.response.status
-  //         this.statusText = error.response.data.data.form[0].message
-  //      }
-  //       })
-  //       .finally((response) => {
-  //        
-  //         }
-  //       })
-  // }
+  //this.filter1 < 1 ? this.inputted.toLowerCase() : this.filter1
+computed: {
+   tabledData() {
+                return this.tableData.filter(list => {
+                return list.name.toLowerCase().includes(this.inputted.toLowerCase());
+            })
+  },
+
+  inputted() {
+    return this.input
+  }
+},
+watch: {
+}
 }
 </script>
 
@@ -74,4 +60,37 @@ h1 { margin-top: 0; display: flex; align-items: center; width: 100%; }
 .el-table__expanded-cell p { font-size: 16px; font-weight: 400; }
 .el-table th { background: #fafafa; }
 .el-table th > .cell { color: #333; }
+
+ .time {
+    font-size: 13px;
+    color: #999;
+  }
+  
+  .bottom {
+    margin-top: 13px;
+    line-height: 12px;
+  }
+
+  .button {
+    padding: 0;
+    float: right;
+    background-color: #409EFF;
+    color: white;
+    padding:7px;
+  }
+
+  .image {
+    width: 100%;
+    display: block;
+  }
+
+  .clearfix:before,
+  .clearfix:after {
+      display: table;
+      content: "";
+  }
+  
+  .clearfix:after {
+      clear: both
+  }
 </style>

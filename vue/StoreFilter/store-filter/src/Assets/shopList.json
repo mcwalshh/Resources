@@ -1,107 +1,122 @@
 {
     "data": [{
-                "name": "Robin hood",
+                "name": "Team",
                 "category": "Hoodies",
                 "colour": "green",
-                "size": "m",
-                "gender": "m"
+                "size": "Men",
+                "gender": "Men",
+                "price": "$10.99"
             },
             {
-                "name": "Asda-das",
+                "name": "Adidas",
                 "category": "Hoodies",
                 "colour": "red",
                 "size": "s",
-                "gender": "f"
+                "gender": "Women",
+                "price": "$11.99"
             },
             {
                 "name": "Baggy",
                 "category": "Hoodies",
                 "colour": "blue",
                 "size": "l",
-                "gender": "m"
+                "gender": "Men",
+                "price": "$15.99"
             },
             {
-                "name": "Speedos",
+                "name": "Chinos",
                 "category": "Shorts",
                 "colour": "red",
-                "size": "m",
-                "gender": "m"
+                "size": "Men",
+                "gender": "Men",
+                "price": "$9.99"
             },
             {
-                "name": "Haiwaiin",
+                "name": "Haiwai",
                 "category": "Shorts",
                 "colour": "green",
                 "size": "s",
-                "gender": "f"
+                "gender": "Women",
+                "price": "$9.99"
             },
             {
                 "name": "Hipster",
                 "category": "Shorts",
                 "colour": "blue",
                 "size": "l",
-                "gender": "m"
+                "gender": "Men",
+                "price": "$19.99"
             },
             {
-                "name": "NKE air",
+                "name": "NIKE air",
                 "category": "Shoes",
                 "colour": "blue",
-                "size": "m",
-                "gender": "m"
+                "size": "Men",
+                "gender": "Men",
+                "price": "$17.50"
             },
             {
-                "name": "CandyFloss",
+                "name": "Pink Look",
                 "category": "Shoes",
                 "colour": "red",
                 "size": "s",
-                "gender": "f"
+                "gender": "Women",
+                "price": "$11.99"
             },
             {
                 "name": "Loafers",
                 "category": "Shoes",
                 "colour": "green",
                 "size": "l",
-                "gender": "m"
+                "gender": "Men",
+                "price": "$32.99"
             },
             {
-                "name": "Uncomfortable but stylish",
+                "name": "Tight fit",
                 "category": "T-Shirts",
                 "colour": "blue",
-                "size": "m",
-                "gender": "m"
+                "size": "Men",
+                "gender": "Men",
+                "price": "$28.99"
             },
             {
-                "name": "Edgy cat",
+                "name": "Cat meme",
                 "category": "T-Shirts",
                 "colour": "red",
                 "size": "l",
-                "gender": "f"
+                "gender": "Women",
+                "price": "$5.99"
             },
             {
-                "name": "GameLogo",
+                "name": "Gamer",
                 "category": "T-Shirts",
                 "colour": "green",
                 "size": "s",
-                "gender": "m"
+                "gender": "Men",
+                "price": "$5.99"
             },
             {
                 "name": "Gloves",
                 "category": "Accessories",
                 "colour": "blue",
                 "size": "s",
-                "gender": "m"
+                "gender": "Men",
+                "price": "$4.99"
             },
             {
                 "name": "Skipping rope",
                 "category": "Accessories",
                 "colour": "red",
                 "size": "l",
-                "gender": "f"
+                "gender": "Women",
+                "price": "$8.99"
             },
             {
                 "name": "Dumbells",
                 "category": "Accessories",
                 "colour": "green",
                 "size": "s",
-                "gender": "f"
+                "gender": "Women",
+                "price": "$4.99"
             }]
 }

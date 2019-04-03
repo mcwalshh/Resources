@@ -1,6 +1,9 @@
 .DS_Store
 node_modules
 /dist
+/React
+/Vanilla ES6
+/Vue/StoreFront
 
 # local env files
 .env.local
