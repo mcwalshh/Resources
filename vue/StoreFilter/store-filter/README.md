@@ -1,4 +1,11 @@
-# store-filter
+# Vue js JSON filter example
+
+![alt text](https://senary.uk/images/shopping-filter.jpg)
+
+
+## Preview: https://senary.uk/store-filter/index.html
+
+
 
 ## Project setup
 ```
