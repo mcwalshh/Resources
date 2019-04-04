@@ -4,9 +4,32 @@
       <span class="search">Search</span> <el-input placeholder="Start typing your search" v-model="input"></el-input>
       
     </h1>
+    <el-row class="extra-padding">
+      <div class="titleWrap">
+      <span class="title">Products</span>
+      </div>
+      <el-radio v-model="filterSelect" label="">All</el-radio>
+      <el-radio v-model="filterSelect" label="Men">Mens</el-radio>
+      <el-radio v-model="filterSelect" label="Women">Womens</el-radio>
+    </el-row>
+    <el-row class="extra-padding">
+      <div class="titleWrap">
+      <span class="title">Colours</span>
+      </div>
+      <el-radio v-model="filterOptions" label="">All</el-radio>
+      <el-radio v-model="filterOptions" label="Red">Red</el-radio>
+      <el-radio v-model="filterOptions" label="Green">Green</el-radio>
+      <el-radio v-model="filterOptions" label="Blue">Blue</el-radio>
+    </el-row>
+  <el-row v-if="!inputted" class="extra-padding">
+    Displaying {{ this.filteredData.length }} product items
+  </el-row>
+  <el-row v-if="inputted" class="extra-padding">
+    {{ this.filteredData.length }} Results for "{{ this.inputted }}" <span v-if="filterOptions || filterSelect">with {{this.filterOptions}}<span v-if="filterOptions && filterSelect">, </span>{{this.filterSelect}} filters.</span>
+  </el-row>
 <el-row>
   
-  <el-col :span="8" v-for="(key, index) in tabledData" :key="index">
+  <el-col :span="6" v-for="(key, index) in filteredData" :key="index">
     <el-card :body-style="{ padding: '0px', margin: '10px' }">
       <img v-lazy="'https://loremflickr.com/320/240/' + key.category + ',' + key.gender +'?' + index" class="image">
       <div style="margin: 14px;">
@@ -30,15 +53,17 @@ export default {
   name: 'Items',
   data() {
     return {
+      filterSelect: '',
+      filterOptions: '',
       input: '',
       tableData: JsonList.data
     };
   },
-  //this.filter1 < 1 ? this.inputted.toLowerCase() : this.filter1
+  //this.filterSelect < 1 ? this.inputted.toLowerCase() : this.filterSelect
 computed: {
-   tabledData() {
+   filteredData() {
                 return this.tableData.filter(list => {
-                return list.name.toLowerCase().includes(this.inputted.toLowerCase());
+                  return list.gender.includes(this.filterSelect) && list.colour.includes(this.filterOptions) && list.name.toLowerCase().includes(this.inputted.toLowerCase());     
             })
   },
 
@@ -53,6 +78,7 @@ watch: {
 
 <style>
 h1 { margin-top: 0; display: flex; align-items: center; width: 100%; }
+.extra-padding { padding:10px; padding-bottom:20px }
 .search { font-size: 16px; color: #4d4d4d; padding-right:10px}
 .el-button { margin-left: auto; }
 .el-collapse-item__header { font-size: 16px; }
@@ -60,7 +86,8 @@ h1 { margin-top: 0; display: flex; align-items: center; width: 100%; }
 .el-table__expanded-cell p { font-size: 16px; font-weight: 400; }
 .el-table th { background: #fafafa; }
 .el-table th > .cell { color: #333; }
-
+.titleWrap { padding-bottom:5px }
+.title { color: #4d4d4d; font-size:14px}
  .time {
     font-size: 13px;
     color: #999;

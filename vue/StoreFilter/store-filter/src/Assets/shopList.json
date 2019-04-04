@@ -2,7 +2,7 @@
     "data": [{
                 "name": "Team",
                 "category": "Hoodies",
-                "colour": "green",
+                "colour": "Green",
                 "size": "Men",
                 "gender": "Men",
                 "price": "$10.99"
@@ -10,7 +10,7 @@
             {
                 "name": "Adidas",
                 "category": "Hoodies",
-                "colour": "red",
+                "colour": "Red",
                 "size": "s",
                 "gender": "Women",
                 "price": "$11.99"
@@ -18,7 +18,7 @@
             {
                 "name": "Baggy",
                 "category": "Hoodies",
-                "colour": "blue",
+                "colour": "Blue",
                 "size": "l",
                 "gender": "Men",
                 "price": "$15.99"
@@ -26,7 +26,7 @@
             {
                 "name": "Chinos",
                 "category": "Shorts",
-                "colour": "red",
+                "colour": "Red",
                 "size": "Men",
                 "gender": "Men",
                 "price": "$9.99"
@@ -34,7 +34,7 @@
             {
                 "name": "Haiwai",
                 "category": "Shorts",
-                "colour": "green",
+                "colour": "Green",
                 "size": "s",
                 "gender": "Women",
                 "price": "$9.99"
@@ -42,7 +42,7 @@
             {
                 "name": "Hipster",
                 "category": "Shorts",
-                "colour": "blue",
+                "colour": "Blue",
                 "size": "l",
                 "gender": "Men",
                 "price": "$19.99"
@@ -50,7 +50,7 @@
             {
                 "name": "NIKE air",
                 "category": "Shoes",
-                "colour": "blue",
+                "colour": "Blue",
                 "size": "Men",
                 "gender": "Men",
                 "price": "$17.50"
@@ -58,7 +58,7 @@
             {
                 "name": "Pink Look",
                 "category": "Shoes",
-                "colour": "red",
+                "colour": "Red",
                 "size": "s",
                 "gender": "Women",
                 "price": "$11.99"
@@ -66,7 +66,7 @@
             {
                 "name": "Loafers",
                 "category": "Shoes",
-                "colour": "green",
+                "colour": "Green",
                 "size": "l",
                 "gender": "Men",
                 "price": "$32.99"
@@ -74,7 +74,7 @@
             {
                 "name": "Tight fit",
                 "category": "T-Shirts",
-                "colour": "blue",
+                "colour": "Blue",
                 "size": "Men",
                 "gender": "Men",
                 "price": "$28.99"
@@ -82,7 +82,7 @@
             {
                 "name": "Cat meme",
                 "category": "T-Shirts",
-                "colour": "red",
+                "colour": "Red",
                 "size": "l",
                 "gender": "Women",
                 "price": "$5.99"
@@ -90,7 +90,7 @@
             {
                 "name": "Gamer",
                 "category": "T-Shirts",
-                "colour": "green",
+                "colour": "Green",
                 "size": "s",
                 "gender": "Men",
                 "price": "$5.99"
@@ -98,7 +98,7 @@
             {
                 "name": "Gloves",
                 "category": "Accessories",
-                "colour": "blue",
+                "colour": "Blue",
                 "size": "s",
                 "gender": "Men",
                 "price": "$4.99"
@@ -106,7 +106,7 @@
             {
                 "name": "Skipping rope",
                 "category": "Accessories",
-                "colour": "red",
+                "colour": "Red",
                 "size": "l",
                 "gender": "Women",
                 "price": "$8.99"
@@ -114,7 +114,7 @@
             {
                 "name": "Dumbells",
                 "category": "Accessories",
-                "colour": "green",
+                "colour": "Green",
                 "size": "s",
                 "gender": "Women",
                 "price": "$4.99"

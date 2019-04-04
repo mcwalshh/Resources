@@ -15,11 +15,6 @@
               <span>All Products</span>
             </el-menu-item>
 
-            <el-menu-item index="items">
-              <i class="el-icon-document"></i>
-              <span>Filters</span>
-            </el-menu-item>
-            </el-menu-item>
           </el-menu>
         </el-aside>
         <el-main>
