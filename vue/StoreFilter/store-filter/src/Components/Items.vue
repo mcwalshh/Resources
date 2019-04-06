@@ -40,7 +40,7 @@
             <span> {{ key.name }}</span>
             <div class="bottom clearfix">
               <time class="time">{{key.gender}}'s {{ key.category }}</time>
-              <el-button type="text" class="button">{{ key.price }}</el-button>
+              <el-button type="text" class="button" @click="emitToCart(key)">{{ key.price }}</el-button>
             </div>
           </div>
         </el-card>
@@ -78,6 +78,12 @@
             this.errorHandle.getListResponse = error.response.data
           }
         })
+    },
+    methods: {
+      emitToCart(items) {
+        console.log("clicked")
+        this.$emit('clickToCart', items)
+      }
     },
     computed: {
       getListResErr() {
@@ -177,7 +183,6 @@
     width: 100%;
     display: block;
   }
-
   .clearfix:before,
   .clearfix:after {
     display: table;

@@ -3,7 +3,9 @@
     <el-container>
       <el-header>
         <h5>Shopping Filter</h5>
+  <el-button size="small">Login</el-button>
       </el-header>
+      
       <el-container>
         <el-aside width="300px">
           <el-menu 
@@ -15,11 +17,36 @@
               <i class="el-icon-menu"></i>
               <span>All Products</span>
             </el-menu-item>
-
+            
+            <el-menu-item 
+            index="shop"
+            style="border:0px;">
+              <i class="el-icon-menu"></i>
+              <span>Shopping List</span>
+              <el-badge :value="shoppingCart.length" class="item" style="top:-10px;left:3px;"></el-badge>
+            </el-menu-item>
+              
           </el-menu>
+            <el-timeline
+            style="padding:20px;padding-left:30px;">
+    <el-timeline-item
+      v-for="(item, index) in shoppingCart"
+      :key="index"
+      :color="item.colour"
+      size="large"
+      :timestamp="item.price">
+      {{item.name}}
+    </el-timeline-item>
+    <el-timeline-item
+    icon="el-icon-success"
+    color="green"
+    >
+Total {{ getCartCost() }}
+    </el-timeline-item>
+  </el-timeline>
         </el-aside>
         <el-main>
-          <router-view />
+          <router-view @clickToCart="addToCart($event)" />
         </el-main>
       </el-container>
     </el-container>
@@ -28,7 +55,23 @@
 
 <script>
   export default {
-    name: 'App'
+    name: 'App',
+    data() {
+      return {
+        shoppingCart: []
+      }
+    },
+    methods: {
+      getCartCost() {
+this.shoppingCart.forEach((a) => {
+return 'Total iss:' + a.price.replace(/\$/g,'')
+})
+      },
+      addToCart(item) {
+        console.log(item)
+        this.shoppingCart.unshift(item)
+      }
+    }
   }
 </script>
 
